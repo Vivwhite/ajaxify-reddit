@@ -26,10 +26,13 @@ function onSuccess(json) {
   for(i=0; i<json.data.children.length; i++){
     var title = json.data.children[i].data.title;
     var image = json.data.children[i].data.thumbnail;
-
-    $('.container').append(`<p>${title}</p>`);
-    $('.container').append('<img src="'+json.data.children[i].data.thumbnail+'">');
-    $('.container').append('<a href="'+json.data.children[i].data.url+'">Read More</a>')
+    var link = json.data.children[i].data.url;
+    $('#main').append(`
+                        <div class = "col-xd-6">
+                          <img class="float-left" src="${json.data.children[i].data.thumbnail}">
+                          <p class="float-right" >${title}</p>
+                          <a href="${json.data.children[i].data.url}">Read More</a><hr>
+                        </div>`);
   }
 }
 
