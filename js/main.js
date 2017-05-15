@@ -32,7 +32,7 @@ function onSuccess(json) {
                         <div class = "card">
                           <img class="card-img-top" src="${json.data.children[i].data.thumbnail}">
                             <div class="card-block">
-                              <p class="float-right" >${title}</p>
+                              <p class="float-center" >${title}</p>
                               <button type="button" class="btn btn-info"><a href="${json.data.children[i].data.url}">Read More</a></button>
                             </div>
                         </div>

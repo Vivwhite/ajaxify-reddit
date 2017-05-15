@@ -1,3 +1,9 @@
+
+h1 {
+  font-family: "Gochi Hand", cursive;
+  font-size: 60px;
+  margin-left: 40px;
+}
 nav ul li {
   display: inline-block;
   list-style-type: none;
@@ -18,16 +24,37 @@ nav ul li {
   border: 1px ;
   border-radius: 6px;
   height: 270px;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   background: #ebeef4;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 5px 5px #9c9fa3;
 }
 
 .card-img-top {
-  margin-top: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+
 }
-.float-right{
+.card-block {
+  padding-bottom: 0;
+}
+
+.float-center{
   text-overflow: ellipsis;
    white-space: nowrap;
    overflow: hidden;
+   max-width: 210px;
+   margin-left: 15px;
+   margin-top: 18px;
+}
+p {
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+  font-size: 18px;
+}
+.btn {
+  background: white;
+  border: solid black;
+}
+a {
+  color: black;
 }
